@@ -1,0 +1,463 @@
+
+/* 
+Stylesheet linked for projects.html, howToDonate.html and donate.html 
+
+Author: michael weinstein
+*/
+
+/* ====================================================================================================================
+/* ===== Projects.HTML >>>>>>>>>>>> */
+
+/* All elts within a project div */
+.project_div * {
+	margin: 10px;
+}
+
+.project_banner {
+	width: 400px;
+	height: 5px;
+	padding: 0px;
+	margin-left: 15px;
+	margin-bottom: 0px;
+}
+/* Name of project div */
+.project_banner * {
+	font-family:'BritannicCom-Ultra', 'Open Sans', Geneva, Arial, Verdana,  sans-serif;
+	font-weight:normal;
+	color:#f04b24; /* 240 75 36 */
+	line-height:1.4em;
+	text-transform:uppercase;
+}
+.project_banner h2 { font-size:1.6em; }
+
+
+/* --- Left Side: Img and description >> */
+div.project_div_left {float: left;}
+
+.project_img {
+	width: 400px;
+	height: 265px;
+	margin: 15px;
+}
+.project_description_div {
+	/* Set same width as .project_img */
+	width: 400px; 
+	margin: 15px;
+	margin-top: 5px;
+}
+/* << Left Side --- */
+
+
+/* --- Right Side: Item list and donate button >> */
+div.project_div_right {
+	float: left;
+	position: relative;
+}
+
+p.item_list_title {
+	font-size: 22px;
+	/*font-weight: bold;*/
+	/*font-style: italic;*/
+	text-decoration: underline;
+	/*color: #f04b24;  */
+}
+
+/* List of items for project*/
+.project_sublist {
+	margin-left: 5px;
+}
+.project_sublist li {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	height: 30px;
+	font-size: 14px;
+}
+/* "Hardware, Software, Services" headers for sublists of items for projects */
+.project_sublist li.project_sublist_header {
+	font-size: 18px;
+	margin-left: 0px;	
+	margin-top: 15px;
+	height: 20px;
+}
+.project_sublist li.list_item {
+	margin-left: 2px;
+	padding-left: 8px;
+}
+.project_sublist p.item {
+	display: inline-block;
+}
+.project_sublist p.item_price {
+	display: inline-block;
+	font-weight: bold;
+}
+
+/* Donated list items */
+li.donated {
+	/*background-color: yellow;*/
+	background-image: url(../images/checkmark2_hex.png);
+	background-size: 25px 25px;
+	background-repeat: no-repeat;
+	background-position: -2px 5px;
+}
+li.donated p {
+	/*text-decoration: line-through;*/
+	/*color: gray;*/
+	color: rgb(150, 150, 150);
+}
+/* Donors Popup */
+div.donors_tooltip {
+	/*width: 170px;*/
+	/*height: 30px;*/
+	display: inline-block;
+	clear: none;
+	position: absolute;
+	border-radius: 8px;
+	z-index: 10;
+	padding: 10px;
+	/*background-color: rgb(150, 150, 150);*/
+	background-color: #f04b24;	/* SYM orange */	
+	/*border: 1px black solid;*/
+	font-size: 14px;
+	font-weight: bold;
+}
+
+/* <hr> (horiz line) */
+.project_list_hr {
+	width: 85%;
+}
+/* Totals */
+.totals_header { font-weight: bold; }
+.list_total {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	font-size: 20px;
+}
+p.list_total_total {
+	display: inline-block;
+	margin: 0px;	
+	/*margin-left: 5px;*/
+	font-size: 22px;
+}
+p.list_total_sofar {
+	display: inline-block;
+	font-size: 34px;
+	margin: 0px;
+	padding-left: 10px;
+	padding-right: 10px;
+	color: #f04b24; /* SYM Orange */
+}
+p.list_total_absolute {
+	display: inline-block;
+	font-size: 28px;
+	margin: 0px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+p.out_of {
+	display: inline-block;
+	font-size: 14px;
+	margin: 0px;
+	font-weight: normal;
+}
+
+a.project_donate_btn {
+	margin-left: 25px;
+}
+/* << Right Side --- */
+
+/* --- Donate Form >> */
+.donate_div {
+	padding: 15px;
+	width: 98%;
+	margin-left: 10px;
+}
+.donate_div input[type="text"] { width: 50%; }
+/*.donate_div input[type="submit"] { width: 100px; }*/
+/* Label for all price radio buttons */
+.price_radio_lbl {
+	display: inline-block;
+	font-weight: normal;
+}
+/* Label for exact price of selected item */
+#item_radio_lbl {
+	font-weight: bold;
+	/*font-style: italic;*/
+}
+#item_other_text {
+	width: 5%;
+	height: .9em;
+	display: inline-block;
+}
+#error_lbl {
+	color: red;
+	font-weight: bold;
+	font-size: 15px;
+}
+input[type='submit'] {
+	font-size: 14px;
+}
+/* << Donate Form --- */
+
+/* --- Info Pane >> */
+#tabs {
+	/*background-color: rgb(218, 217, 218);*/
+	/*background-color: white;*/
+	height: 350px;
+	/*width: 89%;*/
+	/*width: 750px;*/
+	width: 90%;
+	/*z-index: -2;*/
+	/*position: absolute;*/
+	margin-left: 25px;	
+	margin-right: 25px;
+}
+#tabs > ul li a { 
+	font-weight: bold;
+	font-size: 18px;
+	text-decoration: none;
+	float: left;
+	width: 33%;
+}
+.tab_div {
+	/*background-color: #f04b24;*/
+	background-image: url(../images/tab-selected.png);
+	background-repeat: no-repeat;
+
+	/*background-size: 178px 45px;*/
+	/*background-size: 275px 45px;*/
+	background-size: 100% 45px;
+	/*width: 150px;*/
+	/*width: 225px;*/
+	width: 94.5%;
+	height: 10px;
+
+	/*border-radius: 10px;*/
+	padding: 15px;
+	padding-left: 10px;
+	margin-left: 10px;
+	margin-bottom: -10px;
+	
+	text-align: center;
+	/*background-position: 0px 10px;*/
+	z-index: 1;
+	clear: both;
+}
+/* First tab */
+#tab_div-0 {
+	margin-left: 0px;
+	/*margin-right: 0px;*/
+	background-image: none;
+}
+/* Last tab */
+#tab_div-2 {
+	margin-left: 20px;
+}
+
+.tab_div p {
+	/*margin-bottom: 20px;*/
+	/*color: red;*/
+	/*background-color: yellow;*/
+	vertical-align: top;
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+	/*margin-top: 0px;*/
+	/*padding-top: 0px;*/
+	position: relative;
+	top: -10px;
+	color: white;
+}
+.tab_div p:hover { color: rgb(218, 217, 218); }
+.tab_content_div {
+	/*float: left;*/
+	padding: 10px;
+	padding-top: 15px;
+	/*background-color: white;*/
+	background-color: rgb(218, 217, 218);
+	/*background-color: rgb(51, 51, 51);*/
+	width: 100%;
+	/* Maintains constant height across all tabs */
+	height: 200px;
+
+	/*height: 100px;*/
+	/*overflow: scroll;*/
+
+	margin-bottom: 100px;
+	/*margin-top: 10px;*/
+	/*border: 1px black solid;*/
+	/*border-top: none;*/
+	z-index: -1;
+	/*position: relative;*/
+	clear: both;
+}
+.tab_content_div * { color: black; }
+/* << Info Pane --- */
+
+/* === Main progress bar === */
+.progressbar_div {
+	width: 250px;
+	height: 50px;
+	/*margin-left: 25px;*/
+	/*margin-top: 25px;*/
+	margin: 25px;
+}
+.progressbar_div * {
+	font-size: 11px;
+}
+.progressbar_div .progress_sofar_label {
+	float: left;
+	margin: 0px;
+	padding: 0px;
+	color: #f04b24;
+}
+.progressbar_div .progress_total_label {
+	float: right;
+	margin: 0px;
+	padding: 0px;
+}
+.progressbar_div .progress_percent_label {
+	float: right;
+	margin: 0px;
+	padding: 0px;
+	margin-top: -10px;
+	font-size: 22px;
+	color: #f04b24;	/* SYM orange */
+}
+
+.ui-progressbar {
+	width: 100%;
+	height: 60%;
+	background-color: gray;
+	border: 1px black solid;
+	/*border-radius: 10px;*/	
+	
+	/* From original jquery-ui.css doc */
+	/*height: 2em;*/
+	text-align: left;
+	overflow: hidden;
+}
+
+.ui-progressbar .ui-progressbar-value {
+	margin: -1px;
+	height: 110%;
+	background-color: #f04b24;
+}
+.ui-progressbar .ui-progressbar-overlay {}
+.ui-progressbar-indeterminate .ui-progressbar-value { }
+
+/* ///////// ONLY FOR LIST OF DONORS AT BOTTOM, IF WE KEEP /////////// */
+/* Entire Donors section */
+div#donors_div {
+	margin-left: 25px;
+	margin-top: 10px;
+}
+/* 'Donors' */
+div#donors_banner {
+	height: 30px;
+	margin-left: 0px;
+	margin-top: 5px;
+	margin-bottom: 10px;
+}
+/* All list items except for names */
+div#donors_div li {
+	/*margin-top: 5px;*/
+	margin-bottom: 0px;
+	margin-top: 0px;
+}
+/* Name (i.e. Aaron) */
+div#donors_div li.donated_to {
+	font-size: 20px;
+	font-weight: bold;
+	margin-top: 10px;
+	margin-bottom: 5px;
+}
+/* Item */
+p.donated_item {
+	margin-left: 15px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	display: inline-block;
+	font-weight: bold;
+	color: #f04b24;	/* SYM orange */
+}
+/* CSV list of donors */
+p.donors {
+	display: inline-block;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+/* <<<<<<<<<< projects.HTML ===== */
+/* ====================================================================================================================
+/* ===== donationMethods.HTML >>>>>>>>>> */
+
+/* Div between top banner and first .payment_method_div */
+.spacer {
+	height: 75px;
+}
+/* Container div for each payment method, used in donationMethods.html and donate.html */
+.payment_method_div {
+	/*height: 150px;*/
+	background-color: white;
+	clear: both;
+}
+/* Text descriptions generic */
+.description_div {
+	margin: 15px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding: 10px;
+	padding-top: 0px;
+	font-size: 16px;
+	clear: both;
+}
+/* 'Mail a Check' and 'Contact Us' */
+.howToDonate_banner {
+	/*height: 20px;*/
+	clear: both;
+}
+/* <hr> horiz line */
+.donate_hr {
+	width: 450px;
+	margin: 0px;
+	margin-left: 15px;
+}
+
+/* <<<<<<<<<< donationMethods.html ===== */
+/* ====================================================================================================================
+/* ===== donate.html >>>>>>>>>> */
+
+.banner_link {
+	text-decoration: none;
+}
+
+/* Donate button for general PayPal donation */
+/*.main_donate_link {*/
+#show_donate_btn {
+	float: left;
+	margin-top: 0px;
+	margin-bottom: 10px;
+	margin-left: 15px;
+}
+
+.donation_div {
+	height: 200px;
+}
+
+a.sym_highlight {
+	color: rgb(234,56,27);	/* SYM Orange */
+	font-weight: bold;
+	text-decoration: none;
+}
+/* <<<<<<<<<< donate.html ===== */
+/* ==================================================================================================================== */
+
+#extra-label {
+	font-size: 50px;
+	/*background-color: gray;*/
+	vertical-align: middle;
+	/*display: none;*/
+}
+#extra-label-link:hover {
+	text-decoration: none;
+}
+

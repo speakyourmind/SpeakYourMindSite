@@ -1,0 +1,300 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* #Media Queries
+================================================== */
+.videoplayer { width:646px; height:363px; }
+.movieframe { width:646px; background:#343233; padding:15px 15px 9px 15px;}
+.indiegogo { width:676px;}
+	/* Smaller than standard 960 (devices and browsers) */
+	@media only screen and (max-width: 959px) {
+.container {
+	background:url(../images/page-back.gif) left repeat-y;
+}
+.hero-back {
+/*
+	background:url(../images/hero_image.jpg) no-repeat;
+	background-position:113px 111px;
+*/
+}
+#floatmenu {
+	display:block;
+}
+.totop {
+	display:none;
+}
+#topmenuon {
+	display:none;
+}
+#topmenu {
+	display:none;
+}
+}
+
+	/* Tablet Portrait size to standard 960 (devices and browsers) */
+	@media only screen and (min-width: 768px) and (max-width: 959px) {
+.videoplayer { width:573px; height:323px;}
+.movieframe {
+ 	width:573px;
+ 	background:none;
+	margin:0px;
+	padding:0px;
+}
+.indiegogo {
+ 	width:573px;
+	margin:0px;
+	padding:0px;
+}
+#iggShort { display:none; }
+#iggLong { display:inline; }
+
+body {
+	background: #fff;
+	}
+.container {
+	background:url(../images/page-back.gif) left repeat-y;
+}
+.hero-back {
+/*
+	background:url(../images/hero_image-tablet.jpg) no-repeat;
+	background-position:113px 111px;
+*/
+}
+.banner h2 {
+	font-family:'BritannicCom-Ultra', 'Open Sans', Geneva, Arial, Verdana,  sans-serif;
+	font-weight:normal;
+	color:#f04b24;
+	font-size:1.7em;
+	text-transform:uppercase;
+}
+.intro {
+	background-color:#ffffff;
+	padding:10px 20px 15px 15px;
+	margin:18px 20px 18px 18px;
+}
+#featuredProjectImg {
+	width:283px;
+}
+#featuredVideo {
+	width:283px;
+}
+
+select {
+	width: 283px;
+}
+
+#floatmenu {
+	display:block;
+}
+.totop {
+	display:none;
+}
+#topmenuon {
+	display:none;
+}
+#topmenu {
+	display:none;
+}
+}
+
+	/* All Mobile Sizes (devices and browser) */
+	@media only screen and (max-width: 767px) {
+.videoplayer { width:268px; height:161px; }
+.movieframe {
+	width:268px;
+	background:none;
+	margin:0px;
+	padding:0px;
+}
+.indiegogo {
+	width:268px;
+	margin:0px;
+	padding:0px;
+}
+.indiegogo-head h2 {
+	font-size:1.1em;
+	line-height:1em;
+}
+
+.indiegogo-head h3 {
+	font-size:1em;
+	line-height:1em;
+	margin-top:5px;
+}
+#iggShort { display:inline; }
+#iggLong { display:none; }
+
+#featuredVideo {
+	width:268px;
+}
+#featuredProjectImg {
+	width:268px;
+}
+
+.projectimage img {
+	position:relative;
+	z-index:1;
+	width:268px;
+}
+.projectimage h4 {
+	position:relative;
+	z-index:2;
+	font-family:'Open Sans', Geneva, Arial, Verdana,  sans-serif;
+	font-weight:800;
+	color:#ffffff;
+	font-size:1.1em;
+	margin:0px;
+	margin-top:-40px;
+	padding-top:22px;
+	text-align:center;
+	background:url(../images/project-back-268.png) no-repeat center;
+	width:268px;
+	max-width:268px;
+	height:43px;
+	max-height:43px;
+}
+ body {
+	background: #fff;
+	}
+.container {
+	background:url(../images/page-back-blank.gif) left repeat-y;
+}
+.navspacer {
+	margin-left:0px;
+}
+.hero-back {
+/*
+	background:url(../images/hero_image.jpg) no-repeat;
+	background-position:113px 111px;
+*/
+}
+.banner h2 {
+	font-family:'BritannicCom-Ultra', 'Open Sans', Geneva, Arial, Verdana,  sans-serif;
+	font-weight:normal;
+	color:#f04b24;
+	font-size:1.1em;
+	line-height:1.3em;
+	margin-bottom:10px;
+	margin-top:25px;
+	text-transform:uppercase;
+}
+.intro {
+	background-color:#ffffff;
+	padding:10px 20px 15px 15px;
+	margin:18px 20px 18px 18px;
+}
+#floatmenu {
+	display:block;
+}
+.totop {
+	display:none;
+}
+#topmenuon {
+	display:none;
+}
+#topmenu {
+	display:none;
+}
+}
+
+	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+	@media only screen and (min-width: 480px) and (max-width: 767px) {
+.videoplayer { width:402px; height:241px; }
+.movieframe {
+	width:402px;
+	background:none;
+	margin:0px;
+	padding:0px;
+}
+.indiegogo {
+	width:402px;
+	margin:0px;
+	padding:0px;
+}
+
+#featuredVideo {
+	width:402px;
+}
+#featuredProjectImg {
+	width:402px;
+}
+
+.indiegogo-head h2 {
+	font-size:1.8em;
+}
+
+.indiegogo-head h3 {
+	font-size:1.3em;
+}
+
+body {
+	background: #fff;
+	}
+.container {
+	background:url(../images/page-back-blank.gif) left repeat-y;
+}
+.hero-back {
+	background:none;
+}
+.navspacer {
+	margin-left:0px;
+}
+.banner h2 {
+	font-family:'BritannicCom-Ultra', 'Open Sans', Geneva, Arial, Verdana,  sans-serif;
+	font-weight:normal;
+	color:#f04b24;
+	font-size:1.5em;
+	line-height:1.5em;
+	margin-bottom:0px;
+	text-transform:uppercase;
+}
+#floatmenu {
+	display:none;
+}
+.banner {
+	margin-top:20px;
+}
+.totop {
+	display:block;
+}
+#topmenuon {
+	width:402px;
+}
+#topmenu {
+	width:402px;
+	display:block;
+}
+}
+
+	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+	@media only screen and (max-width: 479px) {
+p, li  {
+	padding-right:20px;
+}
+body {
+	background: #fff;
+	}
+.container {
+	background:url(../images/page-back-blank.gif) left repeat-y;
+}
+.hero-back {
+	background:none;
+}
+#floatmenu {
+	display:none;
+}
+.banner {
+	margin-top:20px;
+}
+.indiegogo-head h2 {
+	font-size:1.8em;
+}
+.indiegogo-head h3 {
+	font-size:1.3em;
+}
+#iggShort { display:inline; }
+#iggLong { display:none; }
+#topmenu {
+	display:block;
+}
+}

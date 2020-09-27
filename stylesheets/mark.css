@@ -1,0 +1,101 @@
+/* --- index.html --- */
+div#mark_div {
+	background-color: rgb(86, 86, 86);
+	/*background-color: #f04b24;*/	
+	width: 75%;
+	/*margin-left: 55px;*/
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	padding: 25px;
+}
+/* Override .banner background-color */
+div#mark_banner { background-color: rgb(86, 86, 86); }
+h2#mark_title {
+	/*font-size: 28px;*/
+	font-size: 2.2em;
+	background-color: none;
+	color: white;
+}
+img#mark_img {
+	/*width: 300px;*/
+	width: 80%;
+	height: auto;
+	/*padding: 25px;*/
+}
+p#mark_p {
+	/*font-size: 16px;*/
+	font-size: 1.2em;
+	color: white;
+	padding: 2px;
+	/*padding-left: auto;*/
+	/*padding-right: auto;*/
+}
+h4#mark_donate_text {
+	color: white;
+}
+#mark_donate_btn:hover {
+	text-decoration: none;
+}
+
+/* --- mark_donate.html --- */
+#mark_bg {
+	background-color: white;
+	height: 1450px;
+}
+#donate_mark_title_banner {
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+	/*height: 0px;*/
+}
+#donate_mark_title {
+	font-size: 30px;
+	background-color: none;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+}
+#mark_donate_form {
+	padding: 50px;
+	padding-top: 0px;
+	margin: 0px;
+	margin-top: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	/*background-color: white;*/
+	/*clear: both;*/
+}
+#mark_donate_form #message_text {
+	width: 50%;
+	height: 100px;
+	padding: 0px;
+}
+#anonymous_checkbox {
+	margin-bottom: 15px;
+}
+#mark_donate_form input[type=radio] {
+	margin-left: 3%;
+	margin-right: 0px;
+}
+.radio_div {
+	display: inline;
+	/* Invisible border so elts group together per line */
+	border: 1px white solid;
+}
+#paypal_warning {
+	font-size: 12px;
+	width: 60%;
+	padding: 0px;
+	margin: 0px;
+	margin-top: 10px;
+	color: red;
+}
+input[type=button]#mark_submit {
+	font-size: .9em;
+}
+#ie_warning {
+	font-size: 12px;
+	width: 50%;
+	margin-top: 10px;
+}
+
+
